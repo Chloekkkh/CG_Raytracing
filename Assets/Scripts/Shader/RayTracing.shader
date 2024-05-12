@@ -21,7 +21,7 @@ Shader "Custom/RayTracing"
 			#define TWO_PI 6.28318530718 // Predefine constant for 2π to avoid recalculating it repeatedly
 			#define THRESHOLD_FOR_SKY_GRADIENT 0.4
 			#define SMOOTHING_FACTOR 0.35
-			#define GROUND_TO_SKY_THRESHOLD -0.01
+			#define GROUND_TO_SKY_THRESHOLD -0.05
 			
 			// --- Settings and constants ---
 			static const float PI = 3.1415;
