@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657803, g: 0.49641144, b: 0.5748141, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -223,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 12432447}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.045, y: -1.082, z: 0.356}
+  m_LocalPosition: {x: -0.015000001, y: -0.902, z: -0.13299996}
   m_LocalScale: {x: 2, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -246,8 +246,8 @@ MonoBehaviour:
     emissionColour: {r: 1, g: 1, b: 1, a: 1}
     specularColour: {r: 1, g: 1, b: 1, a: 1}
     emissionStrength: 0
-    smoothness: 1
-    specular: 0.887
+    smoothness: 0
+    specular: 0
     flag: 0
   meshRenderer: {fileID: 12432449}
   meshFilter: {fileID: 12432450}
@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 114202597}
   - component: {fileID: 114202596}
   - component: {fileID: 114202595}
+  - component: {fileID: 114202599}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -393,7 +394,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 992619228}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -432,12 +433,55 @@ Transform:
   m_GameObject: {fileID: 114202594}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.03, y: -0.15, z: -0.72}
+  m_LocalPosition: {x: 0.0000000018626451, y: 0.030000001, z: -1.128}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &114202599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114202594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cf2072b752ec34e9db84b9e4d57004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayTracingMaterials:
+  - colour: {r: 1, g: 1, b: 1, a: 1}
+    emissionColour: {r: 1, g: 1, b: 1, a: 1}
+    specularColour: {r: 1, g: 1, b: 1, a: 1}
+    emissionStrength: 0
+    smoothness: 0
+    specular: 0
+    flag: 0
+  meshRenderer: {fileID: 114202596}
+  meshFilter: {fileID: 114202597}
+  triangleCount: 2
+  materialObjectID: -56078
+  localMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  localMeshChunks:
+  - triangles:
+    - posA: {x: -0.5, y: -0.5, z: -3.0616168e-17}
+      posB: {x: 0.5, y: 0.5, z: 3.0616168e-17}
+      posC: {x: 0.5, y: -0.5, z: -3.0616168e-17}
+      normalA: {x: 0, y: 0, z: -1}
+      normalB: {x: 0, y: 0, z: -1}
+      normalC: {x: 0, y: 0, z: -1}
+    - posA: {x: 0.5, y: 0.5, z: 3.0616168e-17}
+      posB: {x: -0.5, y: -0.5, z: -3.0616168e-17}
+      posC: {x: -0.5, y: 0.5, z: 3.0616168e-17}
+      normalA: {x: 0, y: 0, z: -1}
+      normalB: {x: 0, y: 0, z: -1}
+      normalC: {x: 0, y: 0, z: -1}
+    bounds:
+      m_Center: {x: -0.0024999976, y: -0.0024999976, z: 0}
+      m_Extent: {x: 0.5025, y: 0.5025, z: 0.005}
+    subMeshIndex: 0
 --- !u!21 &210264014
 Material:
   serializedVersion: 8
@@ -619,7 +663,7 @@ Transform:
   m_GameObject: {fileID: 647774126}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.994, y: -0.14, z: 0.354}
+  m_LocalPosition: {x: 1.024, y: 0.040000007, z: -0.13499996}
   m_LocalScale: {x: 2, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -815,13 +859,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0.42261082, y: 0.0047122655, z: -0.0021972947, w: -0.9062964}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -360.596, z: 0}
 --- !u!1 &779778538
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +966,7 @@ Transform:
   m_GameObject: {fileID: 779778538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -0.14, z: 1.31}
+  m_LocalPosition: {x: -0.02, y: 0.04, z: 0.821}
   m_LocalScale: {x: 2, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1118,7 +1162,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.02, z: -3}
+  m_LocalPosition: {x: 0, y: 0.02, z: -3.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1131,7 +1175,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c06e61d2eb53296428faef0a6d200f46, type: 3}
   m_Name: 
@@ -1139,21 +1183,21 @@ MonoBehaviour:
   MaxRayBounce: 30
   RaysPerPixel: 30
   FocusBlurAmount: 0
-  RaySpreadFactor: 0.3
+  RaySpreadFactor: 3
   focusDistance: 1
   environmentSettings:
-    enabled: 1
+    enabled: 0
     groundColour: {r: 0.5471698, g: 0.5239409, b: 0.5239409, a: 0}
     skyColourHorizon: {r: 0.6792453, g: 0.66322535, b: 0.66322535, a: 0}
     SkyColour: {r: 0.13550194, g: 0.63974476, b: 0.8207547, a: 0}
-    sunFocus: 500
+    sunFocus: 200
     sunIntensity: 200
   useShaderInSceneView: 0
   rayTracingShader: {fileID: 4800000, guid: 502455a7c2719f74294d1cf97a61bf17, type: 3}
   accumulateShader: {fileID: 4800000, guid: a2e47e8bb74c83f45912ced1cbf8831f, type: 3}
   numRenderedFrames: 0
-  numMeshChunks: 67
-  numTriangles: 1040
+  numMeshChunks: 68
+  numTriangles: 1042
 --- !u!21 &966527871
 Material:
   serializedVersion: 8
@@ -1316,6 +1360,87 @@ Material:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
+--- !u!21 &992619228
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Standard
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1104674773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1338,15 +1463,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c35d1f9d10fa164ab6b429386799c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c35d1f9d10fa164ab6b429386799c36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c35d1f9d10fa164ab6b429386799c36, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c35d1f9d10fa164ab6b429386799c36, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1474,7 +1599,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 9.529412, g: 9.529412, b: 9.529412, a: 10}
+    - _Color: {r: 4.421647, g: 4.421647, b: 4.421647, a: 4.64}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!21 &1222799042
@@ -1594,7 +1719,7 @@ MonoBehaviour:
   - colour: {r: 0, g: 0, b: 0, a: 1}
     emissionColour: {r: 0.95294124, g: 0.95294124, b: 0.95294124, a: 1}
     specularColour: {r: 1, g: 1, b: 1, a: 1}
-    emissionStrength: 10
+    emissionStrength: 4.64
     smoothness: 0
     specular: 0
     flag: 0
@@ -1761,7 +1886,7 @@ Transform:
   m_GameObject: {fileID: 1529176821}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.016, y: 0.69, z: 0.354}
+  m_LocalPosition: {x: 0.014, y: 0.87, z: -0.22499996}
   m_LocalScale: {x: 1, y: 1, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1867,7 +1992,7 @@ Transform:
   m_GameObject: {fileID: 1582175462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.088, y: -0.14, z: 0.354}
+  m_LocalPosition: {x: -1.0580001, y: 0.040000007, z: -0.13499996}
   m_LocalScale: {x: 2, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1891,7 +2016,7 @@ MonoBehaviour:
     specularColour: {r: 1, g: 1, b: 1, a: 1}
     emissionStrength: 0
     smoothness: 1
-    specular: 0.667
+    specular: 0
     flag: 0
   meshRenderer: {fileID: 1582175464}
   meshFilter: {fileID: 1582175465}
@@ -2009,7 +2134,7 @@ MonoBehaviour:
     specularColour: {r: 1, g: 1, b: 1, a: 1}
     emissionStrength: 0
     smoothness: 0
-    specular: 0.034
+    specular: 0
     flag: 0
   meshRenderer: {fileID: 1776046789}
   meshFilter: {fileID: 1776046790}
@@ -8230,7 +8355,7 @@ Transform:
   m_GameObject: {fileID: 1906891044}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.051, y: 0.81, z: 0.354}
+  m_LocalPosition: {x: -0.020999998, y: 0.99, z: -0.13499996}
   m_LocalScale: {x: 2, y: 2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
